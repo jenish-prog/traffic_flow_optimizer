@@ -45,7 +45,7 @@ for cam_id, path in CAM_SOURCES.items():
     csv_writer.writerow(["Frame", "Lane 1", "Lane 2", "Lane 3"])
     csv_writers[cam_id] = (csv_file, csv_writer)
     frame_counts[cam_id] = 0
-
+print("hiii")
 # Main loop for all cameras
 while any(cap.isOpened() for cap in caps.values()):
     for cam_id, cap in caps.items():
